@@ -41,6 +41,8 @@ Brain Virus and Morris Worm which would become the base of lots of major and mod
 <code>while true:
     infect_next_device()
 </code><br>
+<p>although pseudocode captures the idea of an infinite replication loop, the actual Morris Worm was a bit more sophisticated in its infection logic.</p>
+<br>
 
 **==Love Letter Virus==** was initially made in the 2000s to steal internet login credentials,  also known as ILOVEYOU or the Love Bug, was a computer worm that infected millions of Windows computers in 2000. It spread via email with the subject line "ILOVEYOU" and an attachment named "LOVE-LETTER-FOR-YOU.TXT.vbs" The worm appeared as a text file, but when opened, it downloaded itself into the user's system and spread to their contacts. Recipients assumed the email was a love declaration or joke, and opened it, helping to spread the virus.
 -*over 50 million computers we infected which again at this time was 10% of all computers on the internet. The virus caused an estimated $5.5–8.7 billion in damages and cost $10–15 billion to remove.* <br><br>
@@ -110,6 +112,7 @@ In 2024 someone compiled 12TB of leaked user data from 3,876 domains which is a 
     return input
 </code>
         <p>
+          function does prevent non-alphanumeric characters from being processed—which might block certain injection patterns—it is not a comprehensive solution for preventing injection attacks in real-world applications.<br><br>
             *Optimizes data security by ensuring effective tools, systems, and processes are in place*
         </p>
       </section>
@@ -127,6 +130,7 @@ In 2024 someone compiled 12TB of leaked user data from 3,876 domains which is a 
           </p>
           <code>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</code>
           <p>
+            This command correctly allows SSH traffic, but for better security, additional precautions should be considered.<br><br>
             *Manage and secure physical networks and wireless connections*
           </p>
         </article>
@@ -146,6 +150,7 @@ else:
     deny_access()
 </code>
           <p>
+            Although this works in a basic scenario but is not secure enough for real-world applications. A more robust access control system should be implemented to prevent privilege escalation.<br><br>
             *Keeps data secure by ensuring users follow established policies to control and manage assets to reduce risk of stolen data*
           </p>
         </article>
@@ -188,7 +193,8 @@ conn = sqlite3.connect('example.db')
 cursor = conn.cursor()
 cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
 </code>
-          <p>*Uses secure coding practices which are a set of recommended guidelines that are used to create secure applications and services*</p>
+          <p>the code uses prepared statements to prevent SQL injection. However, additional best practices like closing the connection and validating input should be followed for robust security.<br><br>
+            *Uses secure coding practices which are a set of recommended guidelines that are used to create secure applications and services*</p>
         </article>
       </section>
       <section class="main-section" id="Cybersecurity_Framework">
